@@ -45,6 +45,7 @@ player:GetMouse().KeyDown:connect(function(key)
 end)
 end)
 
+
     local Setting = Window:NewTab("Settings")
     local SettingSection = Setting:NewSection("Settings")
 
