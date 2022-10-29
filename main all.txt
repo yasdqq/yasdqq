@@ -1,0 +1,57 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Bloxfruit Menu", "Synapse")
+
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+     MainSection:NewButton("Silent aim", "Silent aim", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/yasdqq/yasdqq/main/Pyox%20silent%20aim.lua'),true))()
+    end)
+
+    MainSection:NewKeybind("Korblox keybind", "Korblox keybind", Enum.KeyCode.F, function()
+            local ply = game.Players.LocalPlayer
+        local chr = ply.Character
+        chr.RightLowerLeg.MeshId = "902942093"
+        chr.RightLowerLeg.Transparency = "1"
+        chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+        chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+        chr.RightFoot.MeshId = "902942089"
+        chr.RightFoot.Transparency = "1"
+end)
+
+    local Other = Window:NewTab("Others")
+    local OtherSection = Other:NewSection("Others")
+
+    OtherSection:NewButton("Trashtalk Macro0", "Macro KEYBIND Y", function()
+        local words = {
+    'ur bad🤡',
+    'seed',
+    'Clown🤡🤡🤡🤡🤡📷📷📷📷📷',
+    'unknown🤡🤡🤡🤡🤡',
+    'sad',
+    'sonned',
+    'ezzzzzzzzzz📷',
+}
+
+local player = game.Players.LocalPlayer
+local keybind = 'y'
+
+local event = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+
+player:GetMouse().KeyDown:connect(function(key)
+    if key == keybind then
+        event:FireServer(words[math.random(#words)], "All")
+    end
+end)
+end)
+
+    OtherSection:NewButton("Inf yield", "Usefull asf", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+
+    local Setting = Window:NewTab("Settings")
+    local SettingSection = Setting:NewSection("Settings")
+
+    SettingSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
