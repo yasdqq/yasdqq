@@ -152,9 +152,12 @@ do
         mouse_box.Visible = Toggles.MousePosition.Value 
     end)
     
-    local playerTab = MiscellaneousBOX:AddTab("Player")
-    playerTab:AddToggle("No_Legs", {Text = "Korblox"})
-    end
+    local PredictionTab = MiscellaneousBOX:AddTab("Prediction")
+    PredictionTab:AddToggle("Prediction", {Text = "BLOXFRUIT Prediction"})
+    PredictionTab:AddSlider("Amount", {Text = "Prediction Amount", Min = 0.165, Max = 1, Default = 0.165, Rounding = 3}):OnChanged(function()
+        PredictionAmount = Options.Amount.Value
+    end)
+end
 
 resume(create(function()
     RenderStepped:Connect(function()
