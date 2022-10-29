@@ -8,7 +8,7 @@ local Window = Library.CreateLib("Bloxfruit Menu", "Synapse")
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/yasdqq/yasdqq/main/Pyox%20silent%20aim.lua'),true))()
     end)
 
-    MainSection:NewKeybind("Korblox keybind", "Korblox keybind", Enum.KeyCode.F, function()
+    MainSection:NewKeybind("Korblox keybind", "Korblox keybind", Enum.KeyCode.U, function()
             local ply = game.Players.LocalPlayer
         local chr = ply.Character
         chr.RightLowerLeg.MeshId = "902942093"
@@ -45,10 +45,9 @@ player:GetMouse().KeyDown:connect(function(key)
 end)
 end)
 
-
     local Setting = Window:NewTab("Settings")
     local SettingSection = Setting:NewSection("Settings")
 
-    SettingSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+    SettingSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.P, function()
 	Library:ToggleUI()
 end)
