@@ -55,10 +55,6 @@ player:GetMouse().KeyDown:connect(function(key)
 end)
 end)
 
-    OtherSection:NewButton("Inf yield", "Usefull asf", function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-    end)
-
     local Setting = Window:NewTab("Settings")
     local SettingSection = Setting:NewSection("Settings")
 
