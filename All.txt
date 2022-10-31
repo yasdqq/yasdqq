@@ -17,9 +17,6 @@ local Window = Library.CreateLib("Bloxfruit Menu", "Synapse")
         chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
         chr.RightFoot.MeshId = "902942089"
         chr.RightFoot.Transparency = "1" 
-
-- - - - - 
-
 game.Players.LocalPlayer.Character.Head.Size = Vector3.new(0,0, 0)
     game.Players.LocalPlayer.Character.Head.Size = Vector3.new(0,0, 0)
     game.Players.LocalPlayer.Character.Head.Massless = true
