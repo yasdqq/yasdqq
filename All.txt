@@ -8,7 +8,7 @@ local Window = Library.CreateLib("Bloxfruit Menu", "Synapse")
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/yasdqq/yasdqq/main/Pyox%20silent%20aim.lua'),true))()
     end)
 
-     MainSection:NewKeybind("Korblox keybind", "Korblox keybind", Enum.KeyCode.F, function()
+     MainSection:NewKeybind("Korblox & HEADLESS keybind", "Korblox & HEADLESS keybind", Enum.KeyCode.F, function()
             local ply = game.Players.LocalPlayer
         local chr = ply.Character
         chr.RightLowerLeg.MeshId = "902942093"
@@ -17,6 +17,7 @@ local Window = Library.CreateLib("Bloxfruit Menu", "Synapse")
         chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
         chr.RightFoot.MeshId = "902942089"
         chr.RightFoot.Transparency = "1" 
+
 game.Players.LocalPlayer.Character.Head.Size = Vector3.new(0,0, 0)
     game.Players.LocalPlayer.Character.Head.Size = Vector3.new(0,0, 0)
     game.Players.LocalPlayer.Character.Head.Massless = true
