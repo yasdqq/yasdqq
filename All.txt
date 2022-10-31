@@ -16,7 +16,14 @@ local Window = Library.CreateLib("Bloxfruit Menu", "Synapse")
         chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
         chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
         chr.RightFoot.MeshId = "902942089"
-        chr.RightFoot.Transparency = "1"
+        chr.RightFoot.Transparency = "1" 
+
+- - - - - 
+
+game.Players.LocalPlayer.Character.Head.Size = Vector3.new(0,0, 0)
+    game.Players.LocalPlayer.Character.Head.Size = Vector3.new(0,0, 0)
+    game.Players.LocalPlayer.Character.Head.Massless = true
+    game.Players.LocalPlayer.Character.Head.Massless = true 
 end)
 
     local Other = Window:NewTab("Others")
