@@ -99,7 +99,7 @@ local function getClosestPlayer()
     return Closest
 end
 
-local Window = Library:CreateWindow("PYOX SILENT AIM")
+local Window = Library:CreateWindow("YASDNILWARE")
 
 local GeneralTab = Window:AddTab("General")
 local MainBOX = GeneralTab:AddLeftTabbox("Main")
